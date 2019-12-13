@@ -15,12 +15,15 @@ Linearithmic runtime O(n log n). As the size of the input increases, the runtime
 
 Implement binary search
 
+
 List floors in an array (assume already ordered) Split the number of floors in the middle
-create a left hand side array and a right hand side array
-check to see if egg breaks at largest floor on LHS (smallest numbers)
-if yes eliminate LHS
-if no check to see if egg breaks at smallest floor on RHS, continue until egg breaks
-
-
+set min to array 0 set max to array length 
+find midpoint (//2)
+check to see if egg breaks when dropped from largest floor before midpoint 
+if yes go no higher (aka eliminate higher floors)
+if no go to midpoint and drop egg
+if egg breaks, go no higher (eliminate floors higher than this new midpoint) 
+if no, go to midpoint, and drop egg
+repeat until the highest floor the egg will not break on is found
 
 

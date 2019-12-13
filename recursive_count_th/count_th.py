@@ -10,4 +10,4 @@ def count_th(word):
     if 'th' in word:
         ths.append('th')
         return len(count_th(ths))
-    # pass
+    pass

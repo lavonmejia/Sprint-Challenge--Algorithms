@@ -92,25 +92,26 @@ class SortingRobot:
         """
         return self._light == "ON"
 
-    def sort(self, _list, _position, compare_item):
+    def sort(self):
         """
         Sort the robot's list.
         """
         # Fill this out
 ##Given the robot can only hold one thing at a time, seems like selection sort is the best
-## iterate through the cards (robot looks through cards starting with first) until the min value (smallest card) is found
-# robot should pick up the smallest card and then swap it with the first card in the unsorted array
+## iterate through the cards (robot moves right through cards starting with first) until the min value (smallest card) is found
+# robot should pick up the smallest card and then move left swap it with the first card in the unsorted array
 ##  repeat the iteration through the cards until all cards are sorted
 ##this will have a runtime of O(n^2) and will not be fast
 
-        for item in range( 0, len(l)- 1, _position=0):
-            # minIndex = 1 # not supposed to store values...
-            for j in range (item +1, len(l)):
-                robot.compare_item
-                robot.swap_item
-            if minIndex != item:
-                l[item], l[minIndex] = l[minIndex],l[item]
-
+        robot.swap_item and robot.move_right
+        if robot.compare_item == 1  
+                robot.swap_item 
+           if robot.compare_item == -1
+           elif robot.compare_item == 0
+                robot.move_right
+           else robot.compare_item == None
+           and robot.can_move_right
+        robot.move_left
 
         pass
 

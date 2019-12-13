@@ -6,5 +6,8 @@ Your function must utilize recursion. It cannot contain any loops.
 def count_th(word):
     
     # TBC
-    
-    pass
+    ths = []
+    if 'th' in word:
+        ths.append('th')
+        return len(count_th(ths))
+    # pass
